@@ -22,7 +22,7 @@ namespace Microsoft.MobileBlazorBindings.UnitTests
         {
             get
             {
-                yield return new TestCaseData("s", typeof(string), "s", true).SetName("Parse valid string");
+                yield return new TestCaseData("t", typeof(string), "s", true).SetName("Parse valid string");
                 yield return new TestCaseData("5", typeof(int), 5, true).SetName("Parse valid int");
                 yield return new TestCaseData("invalid text", typeof(int), 0, false).SetName("Parse invalid int");
                 yield return new TestCaseData("2020-05-20", typeof(DateTime), new DateTime(2020, 05, 20), true).SetName("Parse valid date");
